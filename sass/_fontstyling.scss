@@ -1,0 +1,24 @@
+@font-face {
+	font-family: Antonio;
+	src: url('../fonts/Antonio-Light.ttf');
+	font-family: Lora;
+	src: url('../fonts/Lora-Bold.ttf');
+}
+
+@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+
+$question-font:lora;
+
+
+//$button-font:Antonio;
+
+$button-font: 'Pathway Gothic One', sans-serif;;
+
+
+.question{
+	font-family: $question-font;
+}
+
+.yesnobtn{
+	font-family: $button-font;
+}

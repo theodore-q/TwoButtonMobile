@@ -1,0 +1,481 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"is",
+				"iswinethemaincourse"
+			],
+			[
+				"g",
+				"goforsomthingexotic"
+			],
+			[
+				"get",
+				"gettingdrunk"
+			],
+			[
+				"din",
+				"dinner"
+			],
+			[
+				"thn",
+				"Thxforplayingnowgetoutofmyflowchart"
+			],
+			[
+				"s",
+				"spraybutterinyourmouth"
+			],
+			[
+				"ea",
+				"eatdirtasachild"
+			],
+			[
+				"go",
+				"gobudgetgobulk"
+			],
+			[
+				"are",
+				"areyouintocults"
+			],
+			[
+				"no",
+				"no"
+			],
+			[
+				"nw",
+				"newvsoldworld"
+			],
+			[
+				"new",
+				"newyears"
+			],
+			[
+				"ha",
+				"haveYouWornItInThePastYear"
+			],
+			[
+				"can",
+				"canYouFixItRightNow"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<!DOCTYPE html>\n<html ng-app=\"flowChart\">\n    <head>\n            <title>Bootstrap 3</title>\n            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n            <link href = \"css/bootstrap.min.css\" rel = \"stylesheet\">\n            <link href = \"animation.css\" rel = \"stylesheet\">\n            <link href = \"fontstyling.css\" rel = \"stylesheet\">\n            <link href = \"moodcard.css\" rel = \"stylesheet\">\n            <script type=\"text/javascript\" src=\"windowwidth.js\"></script>\n            <script type=\"text/javascript\" src=\"js/angular.min.js\"></script>\n            <script type=\"text/javascript\" src=\"js/app.js\"></script>\n            <script type=\"text/javascript\" src=\"js/ngFx.js\"></script>\n\n    </head>\n        <body>\n \n                <div class = \"navbar navbar-inverse navbar-static-top\">\n                        <div class = \"container\">\n                               \n                                <a href = \"#\" class = \"navbar-brand\">Tech Site</a>\n                               \n                                <button class = \"navbar-toggle\" data-toggle = \"collapse\" data-target = \".navHeaderCollapse\">\n                                        <span class = \"icon-bar\"></span>\n                                        <span class = \"icon-bar\"></span>\n                                        <span class = \"icon-bar\"></span>\n                                </button>\n                               \n                                <div class = \"collapse navbar-collapse navHeaderCollapse\">\n                               \n                                        <ul class = \"nav navbar-nav navbar-right\">\n                                       \n                                                <li class = \"active\"><a href = \"#\">Home</a></li>\n                                                <li><a href = \"#\">Blog</a></li>\n                                                <li class = \"dropdown\">\n                                                       \n                                                        <a href = \"#\" class = \"dropdown-toggle\" data-toggle = \"dropdown\">Social Media <b class = \"caret\"></b></a>\n                                                        <ul class = \"dropdown-menu\">\n                                                                <li><a href = \"#\">Twitter</a></li>\n                                                                <li><a href = \"#\">Facebook</a></li>\n                                                                <li><a href = \"#\">Google+</a></li>\n                                                                <li><a href = \"#\">Instagram</a></li>\n                                                        </ul>\n                                               \n                                                </li>\n                                                <li><a href = \"#\">About</a></li>\n                                                <li><a  href=\"#\" ng-click=\"tab.setTab(putItOn)\">Contact</a></li>\n                                       \n                                        </ul>\n                               \n                                </div>\n                               \n                        </div>\n                </div>\n               \n                </div>\n                 \n                 <section ng-controller=\"TrailController as tab\"  controller2 controller1 >  \n                    <p ><!-- {{this.tab}} -->{{this.tab.fauxhistory}}{{test[0]}}</p>\n                    <a href=\"\" ng-click=\"tab.goBack(this.tab.fauxhistory[1])\">\n                    <img ng-show= \"this.tab.fauxhistory[1] && \" src=\"assets/backbtn.png\" class=\"backbtn\" height=\"42\" width=\"42\">\n                    </a>\n                   <!-- <a  href=\"#\"  ng-click=\"tab.setTab(1)\">Contact</a>\n                    <a  href=\"#\"  ng-click=\"tab.setTab(3)\">Clothes</a> -->\n                    <div ng-repeat=\"card in cards\" > \n                        <div ng-show= \"tab.isSet(card.showOn)\" class=\"animate\">\n                            <div class = \"container\" >\n                               <div class = \"row\" >\n                                <h1 class=\"question  text-center\" > {{card.text}}</h1>\n                               </div>\n\n                                <div class = \"row-fluid\" ng-show= \"card.opt1 && card.opt2\">\n                                   \n                                    <div class = \"col-xs-6\" >\n                                        <a href=\"\" ng-click=\"tab.setTab(card.opt1[0].link)\">\n                                            <div ng-show= \"tab.isSet(card.showOn)\" class=\"yesnobtn animate\"> <p class=\"text-center\">{{card.opt1[0].text}}</p></div>\n                                       </a>\n                                    </div>\n                                   \n                                    <div class = \"col-xs-6\">\n                                        <a  href=\"\" ng-click=\"tab.setTab(card.opt2[0].link)\">                               \n                                            <div ng-show= \"tab.isSet(card.showOn)\" class=\"yesnobtn animate\"> <p class=\"text-center \">{{card.opt2[0].text}}</p>\n                                            </div>\n                                        </a>\n                                    </div>\n                                </div>\n                                <br>\n                                &nbsp;\n                                <br>\n                                <div class = \"row-fluid\" ng-show= \"card.opt3 && !card.opt4\">\n                                   \n                                    <div class = \"col-xs-12\" >\n                                        <a href=\"\" ng-click=\"tab.setTab(card.opt3[0].link)\">\n                                            <div ng-show= \"tab.isSet(card.showOn)\" class=\"yesnobtn animate\"> <p class=\"text-center\">{{card.opt3[0].text}}</p></div>\n                                       </a>\n                                    </div>\n                                </div>\n                                <div class = \"row-fluid\" ng-show= \"card.opt3 && card.opt4\">\n                                   \n                                    <div class = \"col-xs-6\" >\n                                        <a href=\"\" ng-click=\"tab.setTab(card.opt3[0].link)\">\n                                            <div ng-show= \"tab.isSet(card.showOn)\" class=\"yesnobtn animate\"> <p class=\"text-center\">{{card.opt3[0].text}}</p></div>\n                                       </a>\n                                    </div>\n                                   \n                                    <div class = \"col-xs-6\">\n                                        <a  href=\"\" ng-click=\"tab.setTab(card.opt4[0].link)\">                               \n                                            <div ng-show= \"tab.isSet(card.showOn)\" class=\"yesnobtn animate\"> <p class=\"text-center\">{{card.opt4[0].text}}</p>\n                                            </div>\n                                        </a>\n                                    </div>\n                                </div>\n                                <div class = \"row-fluid\" ng-show= \"!card.opt1\">\n                                   \n                                    <div class = \"col-xs-12\" >\n                                            <div ng-show= \"tab.isSet(card.showOn)\" class=\"yesnobtn animate\"> <p class=\"text-center\">{{card.text}}</p></div>\n     \n                                    </div>\n                                </div>\n\n\n                        </div>\n                        </div>\n                    </div>\n                    \n\n                    <div ng-repeat=\"bottle in wines\" >\n                    <div ng-show=\"tab.isSet(bottle.showOn)\">\n                       <!-- <a href=\"\" ng-click=\"tab.goBack('whoIs')\">\n                       <img ng-show= \"this.tab.fauxhistory[1] && !card.opt1\" src=\"assets/backbtn.png\" class=\"backbtn\" height=\"42\" width=\"42\">\n                       </a> -->\n                        <div class = \"container\" >\n                           <div class = \"row\" >\n                            <h1 class=\"forward  text-center\" > {{bottle.forward}}</h1>\n                           </div>\n                            <hr>\n                           <div class = \"row\" >\n                                <div class=\"bottleName text-center\"> {{bottle.name}} </div>\n                           </div>\n                           <div class = \"row\" >\n                                <div class = \"col-xs-2\" >\n                                   <img class=\"bottlePhoto\" ng-src=\"{{bottle.imageurl}}\"/>\n                                </div>\n                                <div class = \"col-xs-10 description\" >\n                                    {{bottle.description}}\n                                </div>\n                           </div>\n                         </div>\n                        </div>\n                    \n\n\n                    </div>\n\n\n               </section>\n\n               \n            </div>\n\n               \n\n               \n            </div>\n           \n        </div>\n \n                <div class = \"navbar navbar-default navbar-fixed-bottom\">\n               \n                        <div class = \"container\">\n                                <p class = \"navbar-text pull-left\">Site Built By Theo Evelyn-Rahr in Angular.JS</p>\n                                <a href = \"http://about.me/theo.q.er\" class = \"navbar-btn btn-danger btn pull-right\">About me</a>\n                        </div>\n               \n                </div>\n \n               <script src = \"http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script>\n                <script src = \"js/bootstrap.js\"></script>\n               \n        </body>\n</html>",
+			"file": "index.html",
+			"file_size": 9771,
+			"file_write_time": 130612569497226698,
+			"settings":
+			{
+				"buffer_size": 9775,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "animation.css",
+			"settings":
+			{
+				"buffer_size": 1158,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "moodcard.css",
+			"settings":
+			{
+				"buffer_size": 799,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "rawwinetext",
+			"settings":
+			{
+				"buffer_size": 3552,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 11245,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/theo/Documents/Websites/TwoButtonpage/2btn.sublime-project",
+		"/home/theo/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/theo/.config/sublime-text-2/Packages/User/Default (Linux).sublime-keymap",
+		"/home/theo/Documents/GitRepos/codeschool/exersise2copy/angular.html",
+		"/home/theo/Documents/GitRepos/codeschool/exersise2copy/app.js",
+		"/home/theo/Documents/GitRepos/codeschool/exersise2copy/app.css",
+		"/home/theo/Documents/Websites/TwoButtonpage/index.html",
+		"/home/theo/Documents/Websites/TwoButtonpage/animation.css",
+		"/home/theo/Documents/GitRepos/codeschool/exersise2copy/js/app.js",
+		"/home/theo/Documents/Websites/TwoButtonpage/moodcard.css",
+		"/home/theo/Documents/Websites/Animation box test/show.html",
+		"/home/theo/Documents/Websites/Contact form/index.html",
+		"/home/theo/Documents/Websites/Contact form/basic.css",
+		"/home/theo/Documents/Websites/Contact form/formlogic.js",
+		"/home/theo/Documents/Misc wifi passwords",
+		"/home/theo/Documents/Websites/TwoButtonpage/js/app.js",
+		"/home/theo/Documents/Websites/TwoButtonpage/js/angular.min.js",
+		"/home/theo/Documents/Websites/TwoButtonpage/windowwidth.js",
+		"/home/theo/libraries/Eclipse ADT Bundle/adt-bundle-linux-x86_64-20140702/sdk/tools/android",
+		"/home/theo/Documents/Websites/TwoButtonpage/moodcard.html",
+		"/home/theo/Desktop/backports.list",
+		"/etc/apt/sources.list",
+		"/home/theo/Documents/GitRepos/codeschool/app.js",
+		"/home/theo/Downloads/openttd-1.4.2-linux-generic-amd64/readme.txt",
+		"/home/theo/Downloads/openttd-1.4.2/os/debian/openttd-wrapper",
+		"/home/theo/Downloads/openttd-1.4.2-linux-generic-amd64/COPYING",
+		"/home/theo/Documents/CoolToys/SpeedReading/read.js",
+		"/home/theo/Documents/CoolToys/SpeedReading/style.css",
+		"/home/theo/Documents/CoolToys/SpeedReading/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"not this",
+			"dinner",
+			"\"\n",
+			"areyoua",
+			"arethe",
+			"NewsF",
+			"ng-app",
+			"animateMe",
+			"yesnobtn",
+			"anim",
+			"box",
+			"ng-ani",
+			"ng-an",
+			"ng-ap",
+			"ededed",
+			"scope",
+			"Hang it",
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 9775,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3610,
+								3610
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 552.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "animation.css",
+					"settings":
+					{
+						"buffer_size": 1158,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "moodcard.css",
+					"settings":
+					{
+						"buffer_size": 799,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								184,
+								184
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "rawwinetext",
+					"settings":
+					{
+						"buffer_size": 3552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								358,
+								358
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/app.js",
+					"settings":
+					{
+						"buffer_size": 11245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								335,
+								335
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 221.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 155.0,
+	"status_bar_visible": true
+}

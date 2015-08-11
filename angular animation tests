@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="animationtest">
+    <head>
+            <title>Bootstrap 3</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href = "css/bootstrap.min.css" rel = "stylesheet">
+            <link href = "animation.css" rel = "stylesheet">
+            <link href = "fontstyling.css" rel = "stylesheet">
+            <link href = "moodcard.css" rel = "stylesheet">
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="windowwidth.js"></script>            
+            <script type="text/javascript" src="js/angular.min.js"></script>
+            <script type="text/javascript" src="js/animationtest.js"></script>
+            <script type="text/javascript" src="js/angular-animate.js"></script>
+            <script type="text/javascript" src="js/ngFx.js"></script>
+            <script src="js/animations.js"></script>
+
+
+    </head>
+        <body>
+ 
+                
+ 
+                <script src = "js/bootstrap.js"></script>
+               
+        </body>
+</html>

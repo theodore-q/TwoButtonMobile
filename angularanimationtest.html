@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+    <head>
+            <title>Bootstrap 3</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link href = "css/bootstrap.min.css" rel = "stylesheet">
+            <link href = "animationtest.css" rel = "stylesheet">
+            <link href = "fontstyling.css" rel = "stylesheet">
+            <link href = "moodcard.css" rel = "stylesheet">
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="windowwidth.js"></script>            
+
+
+
+             <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular.min.js"></script>
+             <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.6/angular-animate.js"></script>
+
+
+    </head>
+        <body>
+ 
+                
+                <p>HELlO</p>
+                <body ng-app="ngAnimate">
+                  <div ng-init="checked=true">
+                  <label>
+                    <input type="checkbox" ng-model="checked" style="float:left; margin-right:10px;"> <p>Is Visible...</p>
+                  </label>
+                  <div class="check-element sample-show-hide" ng-show="checked" style="clear:both;">
+                    <p>Visible...</p>
+                  </div>
+                </div>
+
+
+
+                <script src = "js/bootstrap.js"></script>
+               
+        </body>
+</html>
